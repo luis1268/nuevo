@@ -1,0 +1,28 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @chocolate.name %>
+</p>
+
+<p>
+  <strong>Apellido:</strong>
+  <%= @chocolate.apellido %>
+</p>
+
+<p>
+  <strong>Edad:</strong>
+  <%= @chocolate.edad %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @chocolate.email %>
+</p>
+
+<%= link_to 'Edit', edit_chocolate_path(@chocolate) %> |
+<%= link_to 'Back', chocolates_path %>
+<img src="<%= asset_path '13 sin título_20200912230243.png' %>"> 
+
+<link href="https://getbootstrap.com/docs/4.0/examples/jumbotron/jumbotron.css" rel="stylesheet">
+  <%= csrf_meta_tags %>

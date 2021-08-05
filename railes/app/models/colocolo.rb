@@ -1,0 +1,2 @@
+class Colocolo < ApplicationRecord
+end

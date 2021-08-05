@@ -1,0 +1,2 @@
+class Julio < ApplicationRecord
+end

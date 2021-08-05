@@ -1,0 +1,2 @@
+class Tortuga < ApplicationRecord
+end

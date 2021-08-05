@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Angelitopros</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Apellido</th>
+      <th>Edad</th>
+      <th>Email</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @angelitopros.each do |angelitopro| %>
+      <tr>
+        <td><%= angelitopro.name %></td>
+        <td><%= angelitopro.apellido %></td>
+        <td><%= angelitopro.edad %></td>
+        <td><%= angelitopro.email %></td>
+        <td><%= link_to 'Show', angelitopro %></td>
+        <td><%= link_to 'Edit', edit_angelitopro_path(angelitopro) %></td>
+        <td><%= link_to 'Destroy', angelitopro, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Angelitopro', new_angelitopro_path %>

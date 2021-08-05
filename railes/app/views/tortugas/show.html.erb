@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @tortuga.name %>
+</p>
+
+<p>
+  <strong>Apellido:</strong>
+  <%= @tortuga.apellido %>
+</p>
+
+<p>
+  <strong>Edad:</strong>
+  <%= @tortuga.edad %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @tortuga.email %>
+</p>
+
+<%= link_to 'Edit', edit_tortuga_path(@tortuga) %> |
+<%= link_to 'Back', tortugas_path %>

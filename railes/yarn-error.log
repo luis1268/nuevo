@@ -1,0 +1,36 @@
+Arguments: 
+  /usr/bin/node /usr/local/bin/yarn add --dev webpack-dev-server
+
+PATH: 
+  /home/vagrant/.rvm/gems/ruby-3.0.2/bin:/home/vagrant/.rvm/gems/ruby-3.0.2@global/bin:/home/vagrant/.rvm/rubies/ruby-3.0.2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/vagrant/.rvm/bin
+
+Yarn version: 
+  1.22.10
+
+Node version: 
+  12.21.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: EPROTO: protocol error, symlink '../../../multicast-dns/cli.js' -> '/vagrant/fundamentosrails/railes/node_modules/bonjour/node_modules/.bin/multicast-dns'
+
+npm manifest: 
+  {
+    "name": "railes",
+    "private": true,
+    "dependencies": {
+      "@rails/ujs": "^6.0.0",
+      "turbolinks": "^5.2.0",
+      "@rails/activestorage": "^6.0.0",
+      "@rails/actioncable": "^6.0.0"
+    },
+    "version": "0.1.0"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

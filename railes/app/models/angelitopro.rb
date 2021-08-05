@@ -1,0 +1,2 @@
+class Angelitopro < ApplicationRecord
+end

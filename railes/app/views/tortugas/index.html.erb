@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Tortugas</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Apellido</th>
+      <th>Edad</th>
+      <th>Email</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @tortugas.each do |tortuga| %>
+      <tr>
+        <td><%= tortuga.name %></td>
+        <td><%= tortuga.apellido %></td>
+        <td><%= tortuga.edad %></td>
+        <td><%= tortuga.email %></td>
+        <td><%= link_to 'Show', tortuga %></td>
+        <td><%= link_to 'Edit', edit_tortuga_path(tortuga) %></td>
+        <td><%= link_to 'Destroy', tortuga, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Tortuga', new_tortuga_path %>
